@@ -29,7 +29,7 @@ function Items() {
 export default Items;
 
 export async function loader(){
-    const command = "https://aomsin.online/apiList/get-item";
+    const command = "https://ome-let.online/apiList/get-item";
     const response = await fetch(command);
     const resData = await response.json();
     // console.log(resData);
