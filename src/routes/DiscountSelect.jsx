@@ -42,7 +42,7 @@ function DiscountSelect({ parentToChild }) {
     };
     // console.log(discountJsonData);
 
-    const response = fetch("https://ome-let.online/apiList/get-discount/", {
+    const response = fetch("https://aomsin.online/apiList/get-discount/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
