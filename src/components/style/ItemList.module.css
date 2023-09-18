@@ -1,0 +1,25 @@
+.items {
+    list-style: none;
+    max-width: 50rem;
+    width: 40rem;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 992px) {
+    .items{
+      grid-template-columns: repeat(3, 30%);
+    }
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    .items{
+      grid-template-columns: repeat(2, 40%);
+    }
+    
+  }
