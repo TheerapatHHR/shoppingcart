@@ -29,7 +29,7 @@ function Items() {
 export default Items;
 
 export async function loader(){
-    const command = "http://54.206.23.50:3000/apiList/get-item";
+    const command = "https://aomsin.online/apiList/get-item";
     const response = await fetch(command);
     const resData = await response.json();
     // console.log(resData);

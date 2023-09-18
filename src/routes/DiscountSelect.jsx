@@ -42,7 +42,7 @@ function DiscountSelect({ parentToChild }) {
     };
     // console.log(discountJsonData);
 
-    const response = fetch("http://54.206.23.50:3000/apiList/get-discount/", {
+    const response = fetch("https://aomsin.online/apiList/get-discount/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
