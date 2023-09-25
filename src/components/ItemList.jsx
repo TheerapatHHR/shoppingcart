@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import classes from "./style/ItemList.module.css"
 import { useState } from "react";
 
-function ItemList({ passData }) {
+function ItemList({ passData, removeOne }) {
   const items = useLoaderData();
 
   // const [dataFromChild, setDataFromChild] = useState([]);
@@ -12,6 +12,10 @@ function ItemList({ passData }) {
     // setDataFromChild([...dataFromChild, data]);
     passData(data);
   };
+
+  const removeData = (data) => {
+    removeOne(data);
+  }
   
 
   return (
@@ -19,7 +23,7 @@ function ItemList({ passData }) {
       {items.length > 0 && (
         <ul className={classes.items}>
           {items.map((item) => (
-            <Item key={item.item_id} item={item} sendItemData={itemdata} />
+            <Item key={item.item_id} item={item} sendItemData={itemdata} removeOne={removeData} />
           ))}
         </ul>
       )}

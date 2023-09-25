@@ -1,7 +1,7 @@
 import { useState } from "react";
 import classes from "./style/item.module.css";
 
-function Item({ item, sendItemData }){
+function Item({ item, sendItemData, removeOne }){
     const receiveItem = {item}.item;
     const item_name = receiveItem.item_name;
     const category = receiveItem.category;
@@ -26,7 +26,7 @@ function Item({ item, sendItemData }){
         }
         // let totalprice = price*count;
         // console.log(totalprice);
-        sendItemData({
+        removeOne({
             item_name: item_name,
             category: category,
             price: price

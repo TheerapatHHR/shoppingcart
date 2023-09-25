@@ -5,7 +5,7 @@ import classes from "./style/Checkout.module.css";
 function Checkout(){
     const location = useLocation();
     const itemcart = location.state;
-    // console.log(itemcart);
+    console.log(itemcart);
     return(
         <>
             <Modal>

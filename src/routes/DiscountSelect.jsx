@@ -37,10 +37,10 @@ function DiscountSelect({ parentToChild }) {
       discount_type: typeJson,
       amount: amountJson,
       percent_category: percentCategory,
-      every: pointEvery,
+      point_every: pointEvery,
       item_cart: parentToChild,
     };
-    // console.log(discountJsonData);
+    console.log(discountJsonData);
 
     const response = fetch("https://aomsin.online/apiList/get-discount/", {
       method: "POST",
